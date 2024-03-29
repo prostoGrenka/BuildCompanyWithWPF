@@ -1,0 +1,30 @@
+﻿<Page x:Class="BuildCompanyWPF.PageMain.PageLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BuildCompanyWPF.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageLogin">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="294,225,294,153" Height="auto" Width="auto">
+            <Button x:Name="Entrance" Content ="Войти" Margin ="5" Width="95" Height="45" Background="#FF88E18D" BorderBrush="#FF357A49" Click="Button_Click"/>
+            <Button x:Name="Registration"  Content ="Регистрация" Margin ="5" Width="95" Height="45" Background="#FFFCCE00" BorderBrush="#FFB68C31" Click="Registration_Click"/>
+        </StackPanel>
+        <PasswordBox Name ="PasswordUser" HorizontalAlignment="Center" Margin="0,204,0,225" Height="auto" Width="212"/>
+        <Label Content="Введите логин: " Margin="295,114,295,309" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox Name ="LoginUser" HorizontalAlignment="Center" Margin="0,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="212"/>
+        <Label Content="Введите пароль: " Margin="295,172,294,251" Height="auto" Width="auto" RenderTransformOrigin="0.5,0.617"/>
+    </Grid>
+</Page>
