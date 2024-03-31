@@ -64,7 +64,7 @@ namespace BuildCompanyWPF.PageMain
                     FirstName = nameUser.Text,
                     Surname = SecondNameUser.Text,
                     Password = passwordInput.Password,
-                    Id_Role = 2
+                    Id_Role = 1
                 };
                 AppConnect.modelOdb.Users.Add(userObj);
                 AppConnect.modelOdb.SaveChanges();

@@ -28,18 +28,7 @@ namespace BuildCompanyWPF
             AppConnect.modelOdb = new BuildCompanyEntities1();
             AppFrame.frameMain = FrmMain;
 
-
-
-
             FrmMain.Navigate(new PageLogin());
-        }
-
-        private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                DragMove();
-            }
         }
     }
 }
