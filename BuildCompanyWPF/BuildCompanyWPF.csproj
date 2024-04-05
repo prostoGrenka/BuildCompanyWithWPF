@@ -80,50 +80,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ApplicationData\Adress.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
     <Compile Include="ApplicationData\AppConnect.cs" />
     <Compile Include="ApplicationData\AppFrame.cs" />
-    <Compile Include="ApplicationData\BuildCompany.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\BuildCompany.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\BuildCompany.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\CategoryProduct.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\ImportProduct.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Manufacture.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Role.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Supplier.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\sysdiagrams.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\UnitTable.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Users.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,13 +138,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="ApplicationData\BuildCompany.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BuildCompany.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ApplicationData\BuildCompany.edmx.diagram">
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,16 +151,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationData\BuildCompany.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-      <LastGenOutput>BuildCompany.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ApplicationData\BuildCompany.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-      <LastGenOutput>BuildCompany.cs</LastGenOutput>
-    </Content>
     <Resource Include="Image\2G3280.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
