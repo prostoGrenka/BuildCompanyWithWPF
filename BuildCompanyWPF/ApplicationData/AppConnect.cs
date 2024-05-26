@@ -8,6 +8,6 @@ namespace BuildCompanyWPF.ApplicationData
 {
     internal class AppConnect
     {
-        public static BuildCompanyEntities1 modelOdb;
+        public static BuildCompanyEntities1 modelOdb; //hi
     }
 }
