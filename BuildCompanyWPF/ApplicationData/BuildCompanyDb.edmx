@@ -18,14 +18,14 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CategoryProduct" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="ImportProduct">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Article" Type="nvarchar" MaxLength="50" />
           <Property Name="Name" Type="nvarchar" MaxLength="255" />
           <Property Name="Id_Unit" Type="int" />
@@ -43,7 +43,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="manufacture" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="Role">
@@ -57,7 +57,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="supplier" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -74,7 +74,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Unit" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="Users">
@@ -197,7 +197,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CategoryProduct1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ImportProduct" Relationship="Self.FK_ImportProduct_CategoryProduct" FromRole="CategoryProduct" ToRole="ImportProduct" />
         </EntityType>
@@ -205,7 +205,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Id_Unit" Type="Int32" />
@@ -217,6 +217,7 @@
           <Property Name="CurrentDiscount" Type="Int32" />
           <Property Name="Quantity" Type="Int32" />
           <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ImageAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CategoryProduct" Relationship="Self.FK_ImportProduct_CategoryProduct" FromRole="ImportProduct" ToRole="CategoryProduct" />
           <NavigationProperty Name="Manufacture" Relationship="Self.FK_ImportProduct_Manufacture" FromRole="ImportProduct" ToRole="Manufacture" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK_ImportProduct_Supplier" FromRole="ImportProduct" ToRole="Supplier" />
@@ -226,7 +227,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="manufacture1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ImportProduct" Relationship="Self.FK_ImportProduct_Manufacture" FromRole="Manufacture" ToRole="ImportProduct" />
         </EntityType>
@@ -242,7 +243,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="supplier1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ImportProduct" Relationship="Self.FK_ImportProduct_Supplier" FromRole="Supplier" ToRole="ImportProduct" />
         </EntityType>
@@ -260,7 +261,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ImportProduct" Relationship="Self.FK_ImportProduct_UnitTable" FromRole="UnitTable" ToRole="ImportProduct" />
         </EntityType>
@@ -406,6 +407,7 @@
                 <ScalarProperty Name="CurrentDiscount" ColumnName="CurrentDiscount" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ImageAddress" ColumnName="ImageAddress" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

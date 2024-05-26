@@ -64,6 +64,48 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ApplicationData\Adress.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\BuildCompanyDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildCompanyDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\BuildCompanyDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\BuildCompanyDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\CategoryProduct.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\ImportProduct.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Manufacture.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Role.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Supplier.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\sysdiagrams.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\UnitTable.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Users.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -83,50 +125,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ApplicationData\Adress.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
     <Compile Include="ApplicationData\AppConnect.cs" />
     <Compile Include="ApplicationData\AppFrame.cs" />
-    <Compile Include="ApplicationData\BuildCompany.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\BuildCompany.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\BuildCompany.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\CategoryProduct.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\ImportProduct.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Manufacture.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Role.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Supplier.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\sysdiagrams.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\UnitTable.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Users.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,12 +180,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="ApplicationData\BuildCompany.edmx">
+    <EntityDeploy Include="ApplicationData\BuildCompanyDb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BuildCompany.Designer.cs</LastGenOutput>
+      <LastGenOutput>BuildCompanyDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ApplicationData\BuildCompany.edmx.diagram">
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
+    <None Include="ApplicationData\BuildCompanyDb.edmx.diagram">
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -200,16 +200,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationData\BuildCompany.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-      <LastGenOutput>BuildCompany.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ApplicationData\BuildCompany.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-      <LastGenOutput>BuildCompany.cs</LastGenOutput>
-    </Content>
     <Resource Include="Image\logo.jpg" />
     <Resource Include="Image\2G3280.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -217,6 +207,16 @@
     <Resource Include="Image\3L7RCZ.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Content Include="ApplicationData\BuildCompanyDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
+      <LastGenOutput>BuildCompanyDb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ApplicationData\BuildCompanyDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
+      <LastGenOutput>BuildCompanyDb.cs</LastGenOutput>
+    </Content>
     <Content Include="Image\3XBOTN.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

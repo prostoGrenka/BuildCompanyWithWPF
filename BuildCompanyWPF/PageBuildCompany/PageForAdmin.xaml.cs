@@ -162,5 +162,11 @@ namespace BuildCompanyWPF.Page
         {
 
         }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            AppFrame.frameMain.Navigate(new EditData((sender as Button).DataContext as ImportProduct));
+
+        }
     }
 }

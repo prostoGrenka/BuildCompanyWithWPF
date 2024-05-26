@@ -42,6 +42,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-
+        <Label Content="Название фото" Margin="490,331,171,82"></Label>
+        <TextBox x:Name="photoBox" Margin="625,331,20,90"></TextBox>
     </Grid>
 </Page>

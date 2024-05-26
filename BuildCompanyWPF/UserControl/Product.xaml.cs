@@ -19,7 +19,7 @@ namespace BuildCompanyWPF.UserControl
         }
         public ImageSource Source
         {
-            get { return(ImageSource) GetValue(SourceProperty); }
+            get { return (ImageSource)GetValue(SourceProperty); }
             set { SetValue(SourceProperty, value); }
         }
 
@@ -41,7 +41,7 @@ namespace BuildCompanyWPF.UserControl
 
         public static readonly DependencyProperty RefProperty = DependencyProperty.Register("Ref", typeof(string), typeof(Product));
 
-        public string  Color
+        public string Color
         {
             get { return (string)GetValue(ColorProperty); }
             set { SetValue(ColorProperty, value); }
@@ -70,13 +70,7 @@ namespace BuildCompanyWPF.UserControl
 
         private ImportProduct selectedP;
 
-        private void Edit_Click(object sender, RoutedEventArgs e)
-        {
-            AppFrame.frameMain.Navigate(new PageBuildCompany.EditData(selectedP));
-        }
-
-        
-        }
     }
+}
 
 

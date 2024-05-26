@@ -53,6 +53,7 @@ namespace BuildCompanyWPF.PageBuildCompany
             int manuf = ComboManuf.SelectedIndex + 1;
             string names = NamesBox.Text;
             string descc = desc.Text;
+            string photo = photoBox.Text;
             try
             {
                 ImportProduct goods = new ImportProduct()
@@ -68,7 +69,7 @@ namespace BuildCompanyWPF.PageBuildCompany
                     CurrentDiscount = actdisc,
                     Quantity = stock,
                     Description = descc,
-                    //Image = null
+                    ImageAddress = photo
 
                 };
                 AppConnect.modelOdb.ImportProduct.Add(goods);

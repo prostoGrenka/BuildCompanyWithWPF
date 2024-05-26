@@ -46,6 +46,5 @@
         <Button Grid.Column ="6" Style="{StaticResource buttonRemove}" HorizontalAlignment="Center" Width="50">
             <Image Source="../Image/3L7RCZ.jpg" Width="18" Style="{StaticResource Icon}"/>
         </Button>
-        <Button Grid.Column="5" Content="Изменить" Name ="Edit" HorizontalAlignment="Left" Margin="5,32,0,0" VerticalAlignment="Top" Width="95" Height="20" Click="Edit_Click"/>
     </Grid>
 </UserControl>
