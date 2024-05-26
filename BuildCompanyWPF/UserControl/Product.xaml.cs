@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using BuildCompanyWPF.ApplicationData;
+using System.Collections.Generic;
+using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -64,7 +67,16 @@ namespace BuildCompanyWPF.UserControl
         }
 
         public static readonly DependencyProperty PriceProperty = DependencyProperty.Register("Price", typeof(string), typeof(Product));
+
+        private ImportProduct selectedP;
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            AppFrame.frameMain.Navigate(new PageBuildCompany.EditData(selectedP));
+        }
+
+        
+        }
     }
 
-}
 

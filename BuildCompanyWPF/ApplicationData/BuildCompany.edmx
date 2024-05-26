@@ -217,7 +217,6 @@
           <Property Name="CurrentDiscount" Type="Int32" />
           <Property Name="Quantity" Type="Int32" />
           <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="ImageAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CategoryProduct" Relationship="Self.FK_ImportProduct_CategoryProduct" FromRole="ImportProduct" ToRole="CategoryProduct" />
           <NavigationProperty Name="Manufacture" Relationship="Self.FK_ImportProduct_Manufacture" FromRole="ImportProduct" ToRole="Manufacture" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK_ImportProduct_Supplier" FromRole="ImportProduct" ToRole="Supplier" />
@@ -407,7 +406,6 @@
                 <ScalarProperty Name="CurrentDiscount" ColumnName="CurrentDiscount" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="ImageAddress" ColumnName="ImageAddress" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

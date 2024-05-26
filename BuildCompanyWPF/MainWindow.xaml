@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuildCompanyWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="830">
-    <Grid>
+        Title="MainWindow" Height="600" Width="820" Background="DeepSkyBlue">
+    <Grid Margin="0,0,0,4">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="69"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        
+
         <StackPanel Orientation="Horizontal">
-            <TextBlock></TextBlock>
-            <Image></Image>
+            <Image Width="143" Height="64" Source="/Image/logo.jpg"/>
+            <TextBlock Width="501" TextAlignment="Center" FontSize="32"><Run Text="BuildCompany"/></TextBlock>
         </StackPanel>
 
-        <Frame Name="FrmMain" Margin="-10,74,10,0" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
+        <Frame Name="FrmMain" Margin="-10,5,10,0" NavigationUIVisibility="Hidden" Grid.Row="1"/>
 
     </Grid>
 </Window>

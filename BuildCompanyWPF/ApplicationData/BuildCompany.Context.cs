@@ -15,11 +15,20 @@ namespace BuildCompanyWPF.ApplicationData
     
     public partial class BuildCompanyEntities1 : DbContext
     {
+        static BuildCompanyEntities1 _context;
         public BuildCompanyEntities1()
             : base("name=BuildCompanyEntities1")
         {
         }
-    
+        
+        public static BuildCompanyEntities1 GetContext()
+        {
+            if(_context == null)
+                _context = new BuildCompanyEntities1();
+
+            return _context;
+        }
+          
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

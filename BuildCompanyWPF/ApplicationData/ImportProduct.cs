@@ -26,7 +26,6 @@ namespace BuildCompanyWPF.ApplicationData
         public Nullable<int> CurrentDiscount { get; set; }
         public Nullable<int> Quantity { get; set; }
         public string Description { get; set; }
-        public string ImageAddress { get; set; }
     
         public virtual CategoryProduct CategoryProduct { get; set; }
         public virtual Manufacture Manufacture { get; set; }

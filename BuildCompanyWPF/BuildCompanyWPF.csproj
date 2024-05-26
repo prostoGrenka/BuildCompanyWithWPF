@@ -67,11 +67,14 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\CreatedPage.xaml.cs">
-      <DependentUpon>CreatedPage.xaml</DependentUpon>
+    <Compile Include="PageBuildCompany\AddPage.xaml.cs">
+      <DependentUpon>AddPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\MainForAdmin.xaml.cs">
-      <DependentUpon>MainForAdmin.xaml</DependentUpon>
+    <Compile Include="PageBuildCompany\EditData.xaml.cs">
+      <DependentUpon>EditData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageBuildCompany\PageForAdmin.xaml.cs">
+      <DependentUpon>PageForAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Product.xaml.cs">
       <DependentUpon>Product.xaml</DependentUpon>
@@ -128,23 +131,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\CreatedPage.xaml">
+    <Page Include="PageBuildCompany\AddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\Authorization\PageCreateAcc.xaml">
+    <Page Include="PageBuildCompany\Authorization\PageCreateAcc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\Authorization\PageLogin.xaml">
+    <Page Include="PageBuildCompany\Authorization\PageLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\MainForAdmin.xaml">
+    <Page Include="PageBuildCompany\EditData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\MainForClient.xaml">
+    <Page Include="PageBuildCompany\PageForAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,14 +157,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page\Authorization\PageCreateAcc.xaml.cs">
+    <Compile Include="PageBuildCompany\Authorization\PageCreateAcc.xaml.cs">
       <DependentUpon>PageCreateAcc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\Authorization\PageLogin.xaml.cs">
+    <Compile Include="PageBuildCompany\Authorization\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\MainForClient.xaml.cs">
-      <DependentUpon>MainForClient.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -210,6 +210,7 @@
       <DependentUpon>BuildCompany.edmx</DependentUpon>
       <LastGenOutput>BuildCompany.cs</LastGenOutput>
     </Content>
+    <Resource Include="Image\logo.jpg" />
     <Resource Include="Image\2G3280.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
