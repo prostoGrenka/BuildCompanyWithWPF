@@ -1,4 +1,5 @@
 ﻿using BuildCompanyWPF.ApplicationData;
+using BuildCompanyWPF.Page;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,13 +46,13 @@ namespace BuildCompanyWPF.PageMain
                         case 1: 
                             MessageBox.Show("Здравствуйте, Администратор " + userObj.FirstName + "!",
                             "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
-                            AppFrame.frameMain.Navigate(new Page.MainForClient());
+                            AppFrame.frameMain.Navigate(new Page.PageForAdmin());
 
                             break;
                         case 2:
                             MessageBox.Show("Здравствуйте, " + userObj.FirstName + "!",
                                 "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
-                            AppFrame.frameMain.Navigate(new Page.MainForClient());
+                            AppFrame.frameMain.Navigate(new Page.PageForAdmin());
                             break;
 
                         default: MessageBox.Show("Данные не обнаружены!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);

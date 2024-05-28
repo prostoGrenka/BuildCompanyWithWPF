@@ -64,74 +64,90 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ApplicationData\Adress.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\BuildCompanyDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildCompanyDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\BuildCompanyDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\BuildCompanyDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\CategoryProduct.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\ImportProduct.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Manufacture.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Role.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Supplier.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\sysdiagrams.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\UnitTable.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationData\Users.cs">
+      <DependentUpon>BuildCompanyDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageBuildCompany\AddPage.xaml.cs">
+      <DependentUpon>AddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageBuildCompany\EditData.xaml.cs">
+      <DependentUpon>EditData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageBuildCompany\PageForAdmin.xaml.cs">
+      <DependentUpon>PageForAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Product.xaml.cs">
       <DependentUpon>Product.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ApplicationData\Adress.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
     <Compile Include="ApplicationData\AppConnect.cs" />
     <Compile Include="ApplicationData\AppFrame.cs" />
-    <Compile Include="ApplicationData\BuildCompany.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\BuildCompany.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\BuildCompany.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\CategoryProduct.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\ImportProduct.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Manufacture.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Role.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Supplier.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\sysdiagrams.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\UnitTable.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ApplicationData\Users.cs">
-      <DependentUpon>BuildCompany.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="Page\Authorization\PageCreateAcc.xaml">
+    <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\Authorization\PageLogin.xaml">
+    <Page Include="PageBuildCompany\AddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\MainForClient.xaml">
+    <Page Include="PageBuildCompany\Authorization\PageCreateAcc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageBuildCompany\Authorization\PageLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageBuildCompany\EditData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageBuildCompany\PageForAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,14 +157,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page\Authorization\PageCreateAcc.xaml.cs">
+    <Compile Include="PageBuildCompany\Authorization\PageCreateAcc.xaml.cs">
       <DependentUpon>PageCreateAcc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\Authorization\PageLogin.xaml.cs">
+    <Compile Include="PageBuildCompany\Authorization\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Page\MainForClient.xaml.cs">
-      <DependentUpon>MainForClient.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -167,12 +180,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="ApplicationData\BuildCompany.edmx">
+    <EntityDeploy Include="ApplicationData\BuildCompanyDb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BuildCompany.Designer.cs</LastGenOutput>
+      <LastGenOutput>BuildCompanyDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ApplicationData\BuildCompany.edmx.diagram">
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
+    <None Include="ApplicationData\BuildCompanyDb.edmx.diagram">
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -187,22 +200,23 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationData\BuildCompany.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-      <LastGenOutput>BuildCompany.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ApplicationData\BuildCompany.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuildCompany.edmx</DependentUpon>
-      <LastGenOutput>BuildCompany.cs</LastGenOutput>
-    </Content>
+    <Resource Include="Image\logo.jpg" />
     <Resource Include="Image\2G3280.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Image\3L7RCZ.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Content Include="ApplicationData\BuildCompanyDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
+      <LastGenOutput>BuildCompanyDb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ApplicationData\BuildCompanyDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BuildCompanyDb.edmx</DependentUpon>
+      <LastGenOutput>BuildCompanyDb.cs</LastGenOutput>
+    </Content>
     <Content Include="Image\3XBOTN.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

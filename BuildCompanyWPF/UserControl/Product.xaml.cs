@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using BuildCompanyWPF.ApplicationData;
+using System.Collections.Generic;
+using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -16,7 +19,7 @@ namespace BuildCompanyWPF.UserControl
         }
         public ImageSource Source
         {
-            get { return(ImageSource) GetValue(SourceProperty); }
+            get { return (ImageSource)GetValue(SourceProperty); }
             set { SetValue(SourceProperty, value); }
         }
 
@@ -38,7 +41,7 @@ namespace BuildCompanyWPF.UserControl
 
         public static readonly DependencyProperty RefProperty = DependencyProperty.Register("Ref", typeof(string), typeof(Product));
 
-        public string  Color
+        public string Color
         {
             get { return (string)GetValue(ColorProperty); }
             set { SetValue(ColorProperty, value); }
@@ -64,7 +67,10 @@ namespace BuildCompanyWPF.UserControl
         }
 
         public static readonly DependencyProperty PriceProperty = DependencyProperty.Register("Price", typeof(string), typeof(Product));
-    }
 
+        private ImportProduct selectedP;
+
+    }
 }
+
 
